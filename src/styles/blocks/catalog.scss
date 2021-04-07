@@ -1,20 +1,18 @@
-.main {
-  display: flex;
-  justify-content: center;
-
-  &__catalog {
-    margin-top: 50px;
-  }
-}
-
 .catalog {
-  max-width: 1024px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  column-gap: 48px;
+
+  @media (max-width: 930px) {
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  @media (max-width: 730px) {
+    grid-template-columns: repeat(2, 200px);
+  }
 
   &__card {
-    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
