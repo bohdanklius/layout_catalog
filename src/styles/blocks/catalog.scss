@@ -3,6 +3,8 @@
   grid-template-columns: repeat(4, 200px);
   justify-content: center;
   column-gap: 48px;
+  row-gap: 50px;
+  padding-top: 50px;
 
   @media (max-width: 930px) {
     grid-template-columns: repeat(3, 200px);
@@ -10,9 +12,5 @@
 
   @media (max-width: 730px) {
     grid-template-columns: repeat(2, 200px);
-  }
-
-  &__card {
-    margin-top: 50px;
   }
 }
